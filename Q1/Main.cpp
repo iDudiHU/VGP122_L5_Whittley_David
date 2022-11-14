@@ -5,3 +5,30 @@ exercise, assume that the values provided for the year and day are correct, but 
 month value is in the range 1–12; if it isn’t, set the month to 1. Provide a set and a get function for
 each data member. Provide a member function displayDate that displays the month, day and year
 separated by forward slashes (/). Write a test program that demonstrates class Date’s capabilities. */
+
+#include <iostream>
+#include "Date.h"
+
+using namespace std;
+
+
+int main()
+{
+	int inDay = 1;
+	int inMonth = 1;
+	int inYear = 1;
+	
+	cout << "Enter the day: ";
+	cin >> inDay;
+	cout << "Enter the month: ";
+	cin >> inMonth;
+	cout << "Enter the year: ";
+	cin >> inYear;
+
+	Date inDate(int inDay, int inMonth, int inYear);
+
+	Date::displayDate();
+
+	return 0;
+}
+

@@ -14,3 +14,34 @@ d. divide—Divides two Rational numbers. The result should be stored in reduced f
 e. toRationalString—Returns a string representation of a Rational number in the form a/b, where
 a is the numerator and b is the denominator.
 f. toDouble—Returns the Rational number as a double. */
+
+#include <iostream>
+#include "Rational.h"
+
+using namespace std;
+
+int nIn1 = 1;
+int dIn1 = 1;
+int nIn2 = 1;
+int dIn2 = 1;
+
+void main()
+{
+	cout << "Enter the first numerator: ";
+	cin >> nIn1;
+	cout << "Enter the first denominator: ";
+	cin >> dIn1;
+	cout << "Enter the second numerator: ";
+	cin >> nIn2;
+	cout << "Enter the second denominator: ";
+	cin >> dIn2;
+
+	Rational::add(nIn1, dIn1, nIn2, dIn2);
+	Rational::subtract(nIn1, dIn1, nIn2, dIn2);
+	Rational::multiply(nIn1, dIn1, nIn2, dIn2);
+	Rational::divide(nIn1, dIn1, nIn2, dIn2);
+	cout << Rational::toRationalString(nIn1, dIn1, nIn2, dIn2) << endl;
+	Rational::toDouble(nIn1, dIn1, nIn2, dIn2);
+
+
+}
