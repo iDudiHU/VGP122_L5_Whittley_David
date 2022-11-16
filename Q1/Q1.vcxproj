@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Date.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h" />

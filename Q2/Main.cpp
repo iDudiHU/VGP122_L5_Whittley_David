@@ -20,28 +20,46 @@ f. toDouble—Returns the Rational number as a double. */
 
 using namespace std;
 
-int nIn1 = 1;
-int dIn1 = 1;
-int nIn2 = 1;
-int dIn2 = 1;
+int main() {
 
-void main()
-{
-	cout << "Enter the first numerator: ";
-	cin >> nIn1;
-	cout << "Enter the first denominator: ";
-	cin >> dIn1;
-	cout << "Enter the second numerator: ";
-	cin >> nIn2;
-	cout << "Enter the second denominator: ";
-	cin >> dIn2;
+	int a = 0, b = 1;
+	Rational F1, F2;
 
-	Rational::add(nIn1, dIn1, nIn2, dIn2);
-	Rational::subtract(nIn1, dIn1, nIn2, dIn2);
-	Rational::multiply(nIn1, dIn1, nIn2, dIn2);
-	Rational::divide(nIn1, dIn1, nIn2, dIn2);
-	cout << Rational::toRationalString(nIn1, dIn1, nIn2, dIn2) << endl;
-	Rational::toDouble(nIn1, dIn1, nIn2, dIn2);
+	cout << "Enter the numerator: ";
+	cin >> a;
 
+	F1.setNum(a);
 
+	cout << "Enter the denominator: ";
+	cin >> b;
+
+	F1.setDem(b);
+
+	cout << "Enter the numerator: ";
+	cin >> a;
+
+	F2.setNum(a);
+
+	cout << "Enter the denominator: ";
+	cin >> b;
+
+	F2.setDem(b);
+
+	F1.Add(F2);
+	F1.Subtract(F2);
+	F1.Multiply(F2);
+	F1.Divide(F2);
+	F1.GCD(F2);
+
+	F1.DisplayFract(F1);
+	F1.DisplayFloat(F1);
+
+	Rational F3(F2);
+
+	cout << "\n--COPIED FRACTION--" << endl;
+	F3.DisplayFract(F2);
+
+	system("Pause");
+
+	return 0;
 }

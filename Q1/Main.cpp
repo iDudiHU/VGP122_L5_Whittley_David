@@ -12,7 +12,7 @@ separated by forward slashes (/). Write a test program that demonstrates class D
 using namespace std;
 
 
-int main()
+void main()
 {
 	int inDay = 1;
 	int inMonth = 1;
@@ -25,10 +25,16 @@ int main()
 	cout << "Enter the year: ";
 	cin >> inYear;
 
-	Date inDate(int inDay, int inMonth, int inYear);
+	Date inputedDate = Date(inDay, inMonth, inYear);
 
-	cout << Date::displayDate() << endl;
-
-	return 0;
+	cout << "You entered the date: " << inputedDate.displayDate() << endl;
+	cout << "You entered the day: " << inputedDate.getDay() << endl;
+	cout << "You entered the month: " << inputedDate.getMonth() << endl;
+	cout << "You entered the year: " << inputedDate.getYear() << endl;
+	cout << "You entered the date: " << inputedDate.displayDate() << endl;
+	inputedDate.setDay(11);
+	inputedDate.setMonth(11);
+	inputedDate.setYear(1111);
+	cout << "We reset the day to 11/11/1111: " << inputedDate.displayDate() << endl;
 }
 

@@ -1,4 +1,4 @@
 ﻿  Main.cpp
-D:\TFS projects\Working\Git\VGP122\VGP122_L5_Whittley_David\Q1\Main.cpp(30,7): warning C4930: 'Date displayDate(void)': prototyped function not called (was a variable definition intended?)
-D:\TFS projects\Working\Git\VGP122\VGP122_L5_Whittley_David\Q1\Main.cpp(28,7): warning C4930: 'Date inDate(int,int,int)': prototyped function not called (was a variable definition intended?)
-  Q1.vcxproj -> D:\TFS projects\Working\Git\VGP122\VGP122_L5_Whittley_David\x64\Debug\Q1.exe
+C:\Users\matya\Documents\GitHub\VGP122_L5_Whittley_David\Q1\Main.cpp(16,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  LINK : C:\Users\matya\Documents\GitHub\VGP122_L5_Whittley_David\x64\Debug\Q1.exe not found or not built by the last incremental link; performing full link
+  Q1.vcxproj -> C:\Users\matya\Documents\GitHub\VGP122_L5_Whittley_David\x64\Debug\Q1.exe

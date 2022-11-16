@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -10,58 +11,19 @@ private:
 	int day, month, year;
 
 public:
-	
-	string displayDate;
-	Date()
-	{
-		day = 1;
-		month = 1;
-		year = 1;
-	}
+	Date(int, int, int);
 
-	string displayDate(int day, int month, int year)
-	{
-		char d[2];
-		char m[2];
-		char y[4];	
-		
-		string dayStr = itoa(day, d, 10);
-		string monthStr = itoa(month, m, 10);
-		string yearStr = itoa(year, y, 10);
-		string result = "You entered the date: " + dayStr + "/" + monthStr + "/" + yearStr + "/" + den2Str + "\br";
-		return result;
-	}
+	string displayDate();
 
-	void setDay(int d)
-	{
-		day = d;
-	}
+	void setDay(int);
 
-	void setMonth(int m)
-	{
-		if (m < 1 || m > 12)
-			cout << "The Month you entered is not valid. Please enter a valid date";
-		else
-			month = m;
-	}
+	void setMonth(int);
 
-	void setYear(int y)
-	{
-		year = y;
-	}
+	void setYear(int);
 
-	int getDay()
-	{
-		return day;
-	}
+	int getDay();
 
-	int getMonth()
-	{
-		return month;
-	}
+	int getMonth();
 
-	int getYear()
-	{
-		return year;
-	}
+	int getYear();
 };
