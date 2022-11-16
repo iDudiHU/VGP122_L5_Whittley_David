@@ -10,18 +10,8 @@ private:
 	int day, month, year;
 
 public:
-
-	Date();
-	~Date() {};
-
-	void setDay(int);
-	void setMonth(int);
-	void setYear(int);
-	int getDay();
-	int getMonth();
-	int getYear();
-	void displayDate();
-
+	
+	string displayDate;
 	Date()
 	{
 		day = 1;
@@ -29,9 +19,17 @@ public:
 		year = 1;
 	}
 
-	void displayDate()
+	string displayDate(int day, int month, int year)
 	{
-		cout << day << "/" << month << "/" << year << endl;
+		char d[2];
+		char m[2];
+		char y[4];	
+		
+		string dayStr = itoa(day, d, 10);
+		string monthStr = itoa(month, m, 10);
+		string yearStr = itoa(year, y, 10);
+		string result = "You entered the date: " + dayStr + "/" + monthStr + "/" + yearStr + "/" + den2Str + "\br";
+		return result;
 	}
 
 	void setDay(int d)
