@@ -27,7 +27,7 @@ int main()
 
 	Date inDate(int inDay, int inMonth, int inYear);
 
-	Date::displayDate();
+	cout << Date::displayDate() << endl;
 
 	return 0;
 }
